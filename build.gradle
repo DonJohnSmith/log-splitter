@@ -1,0 +1,42 @@
+
+
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'ee/erkko/Application'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
+
+task copyTask(type: Copy) {
+    from './src/main/resources'
+    into './build/libs/'
+}
+
+jar {
+    doFirst {
+        from { configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) } }
+    }
+    dependsOn copyTask
+    manifest {
+        attributes 'Main-Class': 'ee/erkko/Application',
+                   'Class-Path': configurations.runtime.files.collect {"$it.name"}.join(' ')
+    }
+ 
+}

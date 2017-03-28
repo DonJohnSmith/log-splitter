@@ -1,0 +1,301 @@
+Feb 24 16:26:53 erkko-Z50-70 systemd-logind[863]: New seat seat0.
+Feb 24 16:26:53 erkko-Z50-70 systemd-logind[863]: Watching system buttons on /dev/input/event2 (Power Button)
+Feb 24 16:26:53 erkko-Z50-70 systemd-logind[863]: Watching system buttons on /dev/input/event6 (Video Bus)
+Feb 24 16:26:53 erkko-Z50-70 systemd-logind[863]: Watching system buttons on /dev/input/event5 (Video Bus)
+Feb 24 16:26:53 erkko-Z50-70 systemd-logind[863]: Watching system buttons on /dev/input/event1 (Power Button)
+Feb 24 16:26:53 erkko-Z50-70 systemd-logind[863]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Feb 24 16:27:01 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+Feb 24 16:27:01 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet.so
+Feb 24 16:27:01 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Feb 24 16:27:01 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet5.so
+Feb 24 16:27:01 erkko-Z50-70 lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)
+Feb 24 16:27:01 erkko-Z50-70 systemd-logind[863]: New session c1 of user lightdm.
+Feb 24 16:27:01 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)
+Feb 24 16:27:10 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+Feb 24 16:27:10 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet.so
+Feb 24 16:27:10 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Feb 24 16:27:10 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet5.so
+Feb 24 16:27:10 erkko-Z50-70 lightdm: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "erkko"
+Feb 24 14:27:40 erkko-Z50-70 lightdm: pam_unix(lightdm-greeter:session): session closed for user lightdm
+Feb 24 14:27:40 erkko-Z50-70 lightdm: pam_unix(lightdm:session): session opened for user erkko by (uid=0)
+Feb 24 14:27:40 erkko-Z50-70 systemd-logind[863]: New session c2 of user erkko.
+Feb 24 14:27:40 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session opened for user erkko by (uid=0)
+Feb 24 14:27:48 erkko-Z50-70 gnome-keyring-daemon[1763]: The PKCS#11 component was already initialized
+Feb 24 14:27:48 erkko-Z50-70 gnome-keyring-daemon[1763]: The SSH agent was already initialized
+Feb 24 14:27:48 erkko-Z50-70 gnome-keyring-daemon[1763]: The Secret Service was already initialized
+Feb 24 14:27:49 erkko-Z50-70 polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.78 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Feb 24 14:27:51 erkko-Z50-70 dbus[850]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.87" (uid=1000 pid=2446 comm="/usr/lib/x86_64-linux-gnu/indicator-sound/indicato") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply="0" destination=":1.88" (uid=0 pid=2483 comm="/usr/lib/x86_64-linux-gnu/unity-greeter-session-br")
+Feb 24 14:27:51 erkko-Z50-70 dbus[850]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.87" (uid=1000 pid=2446 comm="/usr/lib/x86_64-linux-gnu/indicator-sound/indicato") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply="0" destination=":1.88" (uid=0 pid=2483 comm="/usr/lib/x86_64-linux-gnu/unity-greeter-session-br")
+Feb 24 14:28:00 erkko-Z50-70 systemd-logind[863]: Removed session c1.
+Feb 24 14:28:00 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session closed for user lightdm
+Feb 24 14:28:54 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 14:28:54 erkko-Z50-70 pkexec[2758]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 14:34:51 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 14:34:51 erkko-Z50-70 pkexec[3502]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 14:41:02 erkko-Z50-70 polkit-agent-helper-1[4190]: pam_ecryptfs: pam_sm_authenticate: /home/erkko is already mounted
+Feb 24 14:41:02 erkko-Z50-70 polkitd(authority=local): Operator of unix-session:c2 successfully authenticated as unix-user:erkko to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.325 [/usr/bin/python3 /usr/bin/apturl-gtk apt://vlc] (owned by unix-user:erkko)
+Feb 24 14:42:37 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get update
+Feb 24 14:42:37 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:42:40 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:43:11 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get upgrade
+Feb 24 14:43:11 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:43:51 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 14:43:51 erkko-Z50-70 pkexec[5975]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 14:48:25 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:49:07 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get update
+Feb 24 14:49:07 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:49:08 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:49:39 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get dist-upgrade
+Feb 24 14:49:39 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:49:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 14:49:50 erkko-Z50-70 pkexec[27570]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 14:49:59 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:52:05 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/tee /etc/resolv.conf
+Feb 24 14:52:05 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:52:05 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:52:12 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get update
+Feb 24 14:52:12 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:52:14 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:52:22 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get upgrade
+Feb 24 14:52:22 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:52:23 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:52:47 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get autoremove
+Feb 24 14:52:47 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:52:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 14:52:50 erkko-Z50-70 pkexec[27842]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 14:52:53 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:52:58 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get dist-upgrade
+Feb 24 14:52:58 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:54:03 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:54:49 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get -y vim vlc
+Feb 24 14:54:49 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:54:49 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:54:57 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get -y install vim vlc
+Feb 24 14:54:57 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:55:20 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:55:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 14:55:50 erkko-Z50-70 pkexec[14290]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 14:57:49 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get -y install utorrent
+Feb 24 14:57:49 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 14:57:49 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 14:59:23 erkko-Z50-70 polkit-agent-helper-1[14471]: pam_unix(polkit-1:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=erkko rhost=  user=erkko
+Feb 24 14:59:38 erkko-Z50-70 polkit-agent-helper-1[14474]: pam_ecryptfs: pam_sm_authenticate: /home/erkko is already mounted
+Feb 24 14:59:38 erkko-Z50-70 polkitd(authority=local): Operator of unix-session:c2 successfully authenticated as unix-user:erkko to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.81 [/usr/bin/gnome-software --gapplication-service] (owned by unix-user:erkko)
+Feb 24 15:01:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 15:01:50 erkko-Z50-70 pkexec[15205]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 15:17:01 erkko-Z50-70 CRON[15982]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 15:17:01 erkko-Z50-70 CRON[15982]: pam_unix(cron:session): session closed for user root
+Feb 24 16:09:16 erkko-Z50-70 unix_chkpwd[16216]: password check failed for user (erkko)
+Feb 24 16:09:16 erkko-Z50-70 compiz: pam_unix(unity:auth): authentication failure; logname= uid=1000 euid=1000 tty= ruser= rhost=  user=erkko
+Feb 24 16:09:33 erkko-Z50-70 unix_chkpwd[16217]: password check failed for user (erkko)
+Feb 24 16:09:33 erkko-Z50-70 compiz: pam_unix(unity:auth): authentication failure; logname= uid=1000 euid=1000 tty= ruser= rhost=  user=erkko
+Feb 24 16:09:53 erkko-Z50-70 gnome-keyring-daemon[1763]: couldn't initialize slot with master password: The password or PIN is incorrect
+Feb 24 16:09:53 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 24 16:17:01 erkko-Z50-70 CRON[16304]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 16:17:01 erkko-Z50-70 CRON[16304]: pam_unix(cron:session): session closed for user root
+Feb 24 16:39:19 erkko-Z50-70 gnome-keyring-daemon[1763]: couldn't initialize slot with master password: The password or PIN is incorrect
+Feb 24 16:39:19 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 24 17:17:01 erkko-Z50-70 CRON[17122]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 17:17:01 erkko-Z50-70 CRON[17122]: pam_unix(cron:session): session closed for user root
+Feb 24 18:06:44 erkko-Z50-70 gnome-keyring-daemon[1763]: couldn't initialize slot with master password: The password or PIN is incorrect
+Feb 24 18:06:44 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 24 18:10:27 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/sbin/fdisk -l
+Feb 24 18:10:27 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 18:10:27 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 18:13:14 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/bin/dd if=/dev/sdb of=/home/erkko/usbimage.img bs=1M
+Feb 24 18:13:14 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 18:16:35 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 18:17:01 erkko-Z50-70 CRON[17972]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 18:17:01 erkko-Z50-70 CRON[17972]: pam_unix(cron:session): session closed for user root
+Feb 24 18:21:25 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/sbin/fdisk -l
+Feb 24 18:21:25 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 18:21:26 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 18:22:59 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/bin/dd if=/home/erkko/usbimage.img of=/dev/sdb
+Feb 24 18:22:59 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 18:32:49 erkko-Z50-70 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/2 ruser=erkko rhost=  user=erkko
+Feb 24 18:33:06 erkko-Z50-70 sudo:    erkko : TTY=pts/2 ; PWD=/home/erkko/UtilHelp ; USER=root ; COMMAND=/usr/bin/vim dd_clone_drive.txt
+Feb 24 18:33:06 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 18:36:14 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 19:01:25 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 19:03:06 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/sbin/fdisk -l
+Feb 24 19:03:06 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 19:03:07 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 19:04:24 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/bin/dd if=/dev/sdb of=/home/erkko/win10usb.img bs=1M
+Feb 24 19:04:24 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 19:07:23 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 19:17:01 erkko-Z50-70 CRON[19306]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 19:17:01 erkko-Z50-70 CRON[19306]: pam_unix(cron:session): session closed for user root
+Feb 24 19:31:55 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko/UtilHelp ; USER=root ; COMMAND=/bin/chown erkko:erkko dd_clone_drive.txt
+Feb 24 19:31:55 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 19:31:55 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 19:49:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 19:49:50 erkko-Z50-70 pkexec[23848]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 19:58:25 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/sbin/fdisk -l
+Feb 24 19:58:25 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 19:58:25 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 19:59:39 erkko-Z50-70 sudo:    erkko : TTY=pts/0 ; PWD=/home/erkko ; USER=root ; COMMAND=/sbin/fdisk -l
+Feb 24 19:59:39 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 19:59:39 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 20:17:01 erkko-Z50-70 CRON[29423]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 20:17:01 erkko-Z50-70 CRON[29423]: pam_unix(cron:session): session closed for user root
+Feb 24 20:52:40 erkko-Z50-70 sudo:    erkko : TTY=pts/4 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get mtp-tools
+Feb 24 20:52:40 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 20:52:40 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 20:52:51 erkko-Z50-70 sudo:    erkko : TTY=pts/4 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install mtp-tools
+Feb 24 20:52:51 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 20:52:56 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 20:55:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 20:55:50 erkko-Z50-70 pkexec[6044]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 21:07:01 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install fuse
+Feb 24 21:07:01 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:07:01 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:08:25 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/vim /etc/fuse.conf
+Feb 24 21:08:25 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:08:34 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:09:05 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install go-mtpfs
+Feb 24 21:09:05 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:09:09 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:09:31 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install zenity
+Feb 24 21:09:31 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:09:31 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:10:18 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/wget -O /usr/local/sbin/mtp-declare https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/mtp-automount/mtp-declare
+Feb 24 21:10:18 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:10:19 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:10:40 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/bin/chmod +x /usr/local/sbin/mtp-declare
+Feb 24 21:10:40 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:10:40 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:10:50 erkko-Z50-70 pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+Feb 24 21:10:50 erkko-Z50-70 pkexec[6362]: erkko: Executing command [USER=root] [TTY=unknown] [CWD=/home/erkko] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+Feb 24 21:11:40 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/local/sbin/mtp-declare
+Feb 24 21:11:40 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:11:56 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:17:01 erkko-Z50-70 CRON[6527]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 21:17:01 erkko-Z50-70 CRON[6527]: pam_unix(cron:session): session closed for user root
+Feb 24 21:19:16 erkko-Z50-70 sudo:    erkko : TTY=pts/11 ; PWD=/usr/share/gvfs/mounts ; USER=root ; COMMAND=/usr/bin/vim mtp.mount
+Feb 24 21:19:16 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:19:30 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:22:16 erkko-Z50-70 sudo:    erkko : TTY=pts/4 ; PWD=/run/user/1000/gvfs ; USER=root ; COMMAND=/usr/bin/apt-get install libmtp
+Feb 24 21:22:16 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 24 21:22:16 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 24 21:30:32 erkko-Z50-70 gnome-keyring-daemon[1763]: couldn't initialize slot with master password: The password or PIN is incorrect
+Feb 24 21:30:32 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 24 22:17:01 erkko-Z50-70 CRON[7226]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 22:17:01 erkko-Z50-70 CRON[7226]: pam_unix(cron:session): session closed for user root
+Feb 24 22:42:16 erkko-Z50-70 gnome-keyring-daemon[1763]: couldn't initialize slot with master password: The password or PIN is incorrect
+Feb 24 22:42:16 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 24 23:16:01 erkko-Z50-70 CRON[7876]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 23:16:01 erkko-Z50-70 CRON[7876]: pam_unix(cron:session): session closed for user root
+Feb 24 23:17:01 erkko-Z50-70 CRON[7882]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 24 23:17:01 erkko-Z50-70 CRON[7882]: pam_unix(cron:session): session closed for user root
+Feb 25 00:17:01 erkko-Z50-70 CRON[8315]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 00:17:01 erkko-Z50-70 CRON[8315]: pam_unix(cron:session): session closed for user root
+Feb 25 01:17:01 erkko-Z50-70 CRON[8744]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 01:17:01 erkko-Z50-70 CRON[8744]: pam_unix(cron:session): session closed for user root
+Feb 25 02:17:01 erkko-Z50-70 CRON[9181]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 02:17:01 erkko-Z50-70 CRON[9181]: pam_unix(cron:session): session closed for user root
+Feb 25 03:17:01 erkko-Z50-70 CRON[9593]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 03:17:01 erkko-Z50-70 CRON[9593]: pam_unix(cron:session): session closed for user root
+Feb 25 03:39:05 erkko-Z50-70 gnome-keyring-daemon[1763]: couldn't initialize slot with master password: The password or PIN is incorrect
+Feb 25 03:39:05 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 25 04:17:01 erkko-Z50-70 CRON[10351]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 04:17:01 erkko-Z50-70 CRON[10351]: pam_unix(cron:session): session closed for user root
+Feb 25 04:49:45 erkko-Z50-70 systemd-logind[863]: Delay lock is active (UID 1000/erkko, PID 2204/gnome-session-b) but inhibitor timeout is reached.
+Feb 25 04:49:45 erkko-Z50-70 systemd-logind[863]: System is powering down.
+Feb 25 12:38:43 erkko-Z50-70 systemd-logind[1064]: New seat seat0.
+Feb 25 12:38:43 erkko-Z50-70 systemd-logind[1064]: Watching system buttons on /dev/input/event2 (Power Button)
+Feb 25 12:38:43 erkko-Z50-70 systemd-logind[1064]: Watching system buttons on /dev/input/event5 (Video Bus)
+Feb 25 12:38:43 erkko-Z50-70 systemd-logind[1064]: Watching system buttons on /dev/input/event4 (Video Bus)
+Feb 25 12:38:43 erkko-Z50-70 systemd-logind[1064]: Watching system buttons on /dev/input/event1 (Power Button)
+Feb 25 12:38:43 erkko-Z50-70 systemd-logind[1064]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Feb 25 12:38:47 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+Feb 25 12:38:47 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet.so
+Feb 25 12:38:47 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Feb 25 12:38:47 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet5.so
+Feb 25 12:38:47 erkko-Z50-70 lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)
+Feb 25 12:38:48 erkko-Z50-70 systemd-logind[1064]: New session c1 of user lightdm.
+Feb 25 12:38:48 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)
+Feb 25 12:38:54 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+Feb 25 12:38:54 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet.so
+Feb 25 12:38:54 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Feb 25 12:38:54 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet5.so
+Feb 25 12:38:54 erkko-Z50-70 lightdm: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "erkko"
+Feb 25 12:40:04 erkko-Z50-70 lightdm: pam_unix(lightdm-greeter:session): session closed for user lightdm
+Feb 25 12:40:04 erkko-Z50-70 lightdm: pam_unix(lightdm:session): session opened for user erkko by (uid=0)
+Feb 25 12:40:05 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session opened for user erkko by (uid=0)
+Feb 25 12:40:05 erkko-Z50-70 systemd-logind[1064]: New session c2 of user erkko.
+Feb 25 12:40:08 erkko-Z50-70 gnome-keyring-daemon[1928]: The PKCS#11 component was already initialized
+Feb 25 12:40:08 erkko-Z50-70 gnome-keyring-daemon[1928]: The SSH agent was already initialized
+Feb 25 12:40:08 erkko-Z50-70 gnome-keyring-daemon[1928]: The Secret Service was already initialized
+Feb 25 12:40:08 erkko-Z50-70 polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.92 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Feb 25 12:40:09 erkko-Z50-70 dbus[1068]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.80" (uid=1000 pid=2451 comm="/usr/lib/x86_64-linux-gnu/indicator-sound/indicato") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply="0" destination=":1.94" (uid=0 pid=2609 comm="/usr/lib/x86_64-linux-gnu/unity-greeter-session-br")
+Feb 25 12:40:09 erkko-Z50-70 dbus[1068]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.80" (uid=1000 pid=2451 comm="/usr/lib/x86_64-linux-gnu/indicator-sound/indicato") interface="org.freedesktop.DBus.Properties" member="GetAll" error name="(unset)" requested_reply="0" destination=":1.94" (uid=0 pid=2609 comm="/usr/lib/x86_64-linux-gnu/unity-greeter-session-br")
+Feb 25 12:40:25 erkko-Z50-70 systemd-logind[1064]: Removed session c1.
+Feb 25 12:40:25 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session closed for user lightdm
+Feb 25 13:17:01 erkko-Z50-70 CRON[3493]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 13:17:01 erkko-Z50-70 CRON[3493]: pam_unix(cron:session): session closed for user root
+Feb 25 14:17:01 erkko-Z50-70 CRON[4532]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 14:17:01 erkko-Z50-70 CRON[4532]: pam_unix(cron:session): session closed for user root
+Feb 25 14:36:38 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 25 14:42:09 erkko-Z50-70 polkit-agent-helper-1[5408]: pam_ecryptfs: pam_sm_authenticate: /home/erkko is already mounted
+Feb 25 14:42:09 erkko-Z50-70 polkitd(authority=local): Operator of unix-session:c2 successfully authenticated as unix-user:erkko to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.99 [/usr/bin/gnome-software --gapplication-service] (owned by unix-user:erkko)
+Feb 25 14:48:57 erkko-Z50-70 sudo:    erkko : TTY=pts/1 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/playonlinux
+Feb 25 14:48:57 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 14:49:01 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 25 15:17:01 erkko-Z50-70 CRON[14407]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 15:17:01 erkko-Z50-70 CRON[14407]: pam_unix(cron:session): session closed for user root
+Feb 25 16:17:01 erkko-Z50-70 CRON[15665]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 16:17:01 erkko-Z50-70 CRON[15665]: pam_unix(cron:session): session closed for user root
+Feb 25 17:17:01 erkko-Z50-70 CRON[16286]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 17:17:01 erkko-Z50-70 CRON[16286]: pam_unix(cron:session): session closed for user root
+Feb 25 18:17:01 erkko-Z50-70 CRON[20245]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 18:17:01 erkko-Z50-70 CRON[20245]: pam_unix(cron:session): session closed for user root
+Feb 25 19:04:02 erkko-Z50-70 sudo:    erkko : TTY=pts/1 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install openal
+Feb 25 19:04:02 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 19:04:03 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 25 19:10:35 erkko-Z50-70 sudo:    erkko : TTY=pts/10 ; PWD=/home/erkko ; USER=root ; COMMAND=/bin/su -
+Feb 25 19:10:35 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 19:10:35 erkko-Z50-70 su[13692]: Successful su for root by root
+Feb 25 19:10:35 erkko-Z50-70 su[13692]: + /dev/pts/10 root:root
+Feb 25 19:10:35 erkko-Z50-70 su[13692]: pam_unix(su:session): session opened for user root by (uid=0)
+Feb 25 19:10:35 erkko-Z50-70 systemd-logind[1064]: New session 2 of user root.
+Feb 25 19:10:35 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Feb 25 19:11:54 erkko-Z50-70 su[13692]: pam_unix(su:session): session closed for user root
+Feb 25 19:11:54 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 25 19:11:54 erkko-Z50-70 systemd-logind[1064]: Removed session 2.
+Feb 25 19:11:55 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session closed for user root
+Feb 25 19:17:01 erkko-Z50-70 CRON[16300]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 19:17:01 erkko-Z50-70 CRON[16300]: pam_unix(cron:session): session closed for user root
+Feb 25 20:17:01 erkko-Z50-70 CRON[25851]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 20:17:01 erkko-Z50-70 CRON[25851]: pam_unix(cron:session): session closed for user root
+Feb 25 20:22:04 erkko-Z50-70 compiz: gkr-pam: unlocked login keyring
+Feb 25 21:17:01 erkko-Z50-70 CRON[27364]: pam_unix(cron:session): session opened for user root by (uid=0)
+Feb 25 21:17:02 erkko-Z50-70 CRON[27364]: pam_unix(cron:session): session closed for user root
+Feb 25 22:06:08 erkko-Z50-70 polkit-agent-helper-1[28515]: pam_ecryptfs: pam_sm_authenticate: /home/erkko is already mounted
+Feb 25 22:06:08 erkko-Z50-70 polkitd(authority=local): Operator of unix-session:c2 successfully authenticated as unix-user:erkko to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.6403 [/usr/bin/python3 /usr/bin/session-installer] (owned by unix-user:erkko)
+Feb 25 22:08:00 erkko-Z50-70 sudo:    erkko : TTY=pts/6 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install bs-player
+Feb 25 22:08:00 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 22:08:00 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 25 22:11:24 erkko-Z50-70 sudo:    erkko : TTY=pts/6 ; PWD=/home/erkko ; USER=root ; COMMAND=/usr/bin/apt-get install vlsub
+Feb 25 22:11:24 erkko-Z50-70 sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Feb 25 22:11:24 erkko-Z50-70 sudo: pam_unix(sudo:session): session closed for user root
+Feb 25 22:16:33 erkko-Z50-70 polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.92, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Feb 25 22:16:38 erkko-Z50-70 systemd-logind[1064]: Delay lock is active (UID 1000/erkko, PID 2251/gnome-session-b) but inhibitor timeout is reached.
+Feb 25 22:16:38 erkko-Z50-70 systemd-logind[1064]: System is rebooting.
+Feb 26 04:18:26 erkko-Z50-70 systemd-logind[1042]: New seat seat0.
+Feb 26 04:18:26 erkko-Z50-70 systemd-logind[1042]: Watching system buttons on /dev/input/event2 (Power Button)
+Feb 26 04:18:26 erkko-Z50-70 systemd-logind[1042]: Watching system buttons on /dev/input/event5 (Video Bus)
+Feb 26 04:18:26 erkko-Z50-70 systemd-logind[1042]: Watching system buttons on /dev/input/event4 (Video Bus)
+Feb 26 04:18:26 erkko-Z50-70 systemd-logind[1042]: Watching system buttons on /dev/input/event1 (Power Button)
+Feb 26 04:18:26 erkko-Z50-70 systemd-logind[1042]: Watching system buttons on /dev/input/event0 (Lid Switch)
+Feb 26 04:18:32 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+Feb 26 04:18:32 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet.so
+Feb 26 04:18:32 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Feb 26 04:18:32 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet5.so
+Feb 26 04:18:32 erkko-Z50-70 lightdm: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)
+Feb 26 04:18:32 erkko-Z50-70 systemd-logind[1042]: New session c1 of user lightdm.
+Feb 26 04:18:32 erkko-Z50-70 systemd: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)
+Feb 26 04:18:40 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory
+Feb 26 04:18:40 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet.so
+Feb 26 04:18:40 erkko-Z50-70 lightdm: PAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory
+Feb 26 04:18:40 erkko-Z50-70 lightdm: PAM adding faulty module: pam_kwallet5.so
+Feb 26 04:18:40 erkko-Z50-70 lightdm: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "erkko"
